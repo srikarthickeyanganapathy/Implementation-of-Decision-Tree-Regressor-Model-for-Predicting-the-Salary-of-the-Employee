@@ -34,6 +34,9 @@ from sklearn.preprocessing import LabelEncoder
 le=LabelEncoder()
 
 data["Position"]=le.fit_transform(data["Position"])
+data.head()
+x=data[["Position","Level"]]
+x.head()
 y = data["Salary"]
 y.head()
 
